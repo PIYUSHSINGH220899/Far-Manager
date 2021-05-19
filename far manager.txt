@@ -1,0 +1,27 @@
+shift + f10 	-> commands
+A 		-> file associations
+insert		-> create *.cpp 
+		-> execute command (g++ !.cpp -o !.exe -ggdb -DDEBUG -std=c++14 -O2 -Wl,--stack=256000000 -Wall -Wextra -Wshadow)
+insert 		-> create *.exe 
+		-> uncheck view command
+		-> edit command (gdb.exe)
+
+
+shift + f4 	-> create file (example - hello.cpp)
+f2		-> save
+enter		-> on cpp file to execute using execute command
+
+ctrl + o	-> open the console
+
+create new input file (shift + f4)
+execute using (hello.exe <in)
+
+create new output file (shift + f4)
+view using f3 
+
+
+other and better execute commands - 
+
+g++ !.cpp -o !.exe -O2 -Wall -Wl,--stack=268435456 -Wextra -std=c++14 -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Wno-unused-result -Wno-sign-conversion -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fsanitize=float-divide-by-zero -fsanitize=float-cast-overflow -fno-sanitize-recover=all -fstack-protector-all -D_FORTIFY_SOURCE=2
+
+g++ !.cpp -o !.exe -O2 -Wall -Wl,--stack=268435456 -Wextra -std=c++14 -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wredundant-decls -fmax-errors=2 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC
