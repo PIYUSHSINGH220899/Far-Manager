@@ -25,3 +25,6 @@ other and better execute commands -
 g++ !.cpp -o !.exe -O2 -Wall -Wl,--stack=268435456 -Wextra -std=c++14 -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Wno-unused-result -Wno-sign-conversion -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fsanitize=float-divide-by-zero -fsanitize=float-cast-overflow -fno-sanitize-recover=all -fstack-protector-all -D_FORTIFY_SOURCE=2
 
 g++ !.cpp -o !.exe -O2 -Wall -Wl,--stack=268435456 -Wextra -std=c++14 -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wredundant-decls -fmax-errors=2 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC
+
+included the debug flag ->
+g++ !.cpp -o !.exe -O2 -Wall -Wl,--stack=268435456 -Wextra -std=c++17 -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Wno-unused-result -Wno-sign-conversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fno-sanitize-recover=all -fstack-protector-all
